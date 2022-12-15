@@ -352,7 +352,7 @@ void L3GD20_ReadXYZAngRate(float *pfData)
   uint8_t tmpbuffer[6] ={0};
   int16_t RawData[3] = {0};
   uint8_t tmpreg = 0;
-  float sensitivity = 0;
+  float sensitivity = 0.07;
   int i =0;
   
   GYRO_IO_Read(&tmpreg,L3GD20_CTRL_REG4_ADDR,1);
